@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zdn.loginform.SignInActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username" android:ems="15"
+        android:id="@+id/etRusername"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password" android:ems="15"
+        android:id="@+id/etRpassword"
+        android:layout_below="@+id/etRusername"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password" android:ems="15"
+        android:id="@+id/etRCpassword"
+        android:layout_below="@+id/etRpassword"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Address" android:ems="15"
+        android:id="@+id/etRaddress"
+        android:layout_below="@+id/etRCpassword"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Phone number" android:ems="15"
+        android:id="@+id/etRphone"
+        android:layout_below="@+id/etRaddress"
+        android:layout_alignStart="@+id/etRaddress" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email" android:ems="15"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etRphone"
+        android:layout_centerHorizontal="true"
+         />
+
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbgMale"
+        android:text="Male"
+        android:layout_below="@+id/etEmail"
+        android:layout_toStartOf="@+id/btnRegister" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbgFemale"
+        android:text="Female" android:layout_marginRight="100px"
+        android:layout_marginEnd="54dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignEnd="@+id/etRphone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" android:layout_below="@+id/rbgMale"
+        android:id="@+id/btnRegister" android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit" android:layout_below="@+id/btnRegister"
+        android:id="@+id/btnExit" android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
